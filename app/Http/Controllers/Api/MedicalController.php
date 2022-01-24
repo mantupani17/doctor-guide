@@ -23,7 +23,7 @@ class MedicalController extends Controller
                 'validation_status' => true,
                 'data' => $lastData
             ];
-        } catch (\Throwable $th) {
+        } catch (Exception $err) {
             //throw $th;
             return [ 
                 'status' => 'FAILED' , 
